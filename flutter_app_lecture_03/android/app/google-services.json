@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "245060424856",
+    "firebase_url": "https://flutter-lecture-firebase.firebaseio.com",
+    "project_id": "flutter-lecture-firebase",
+    "storage_bucket": "flutter-lecture-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245060424856:android:a4eea7de9359b4ee",
+        "android_client_info": {
+          "package_name": "flutter.lesson.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245060424856-dlq1mmegu3pjnvpflps0f43k5ek71ks7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2fV8sW9rsOckIP3mm0i3xIrsEf5SB6ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245060424856-dlq1mmegu3pjnvpflps0f43k5ek71ks7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "245060424856-3cf47u358c3c18d71quuj95jh8kehjml.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "flutter.lesson.firebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
