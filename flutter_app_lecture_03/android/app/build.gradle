@@ -41,7 +41,9 @@ android {
         applicationId "flutter.lesson.firebase"
         minSdkVersion 16
         targetSdkVersion 28
+
         multiDexEnabled true
+
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

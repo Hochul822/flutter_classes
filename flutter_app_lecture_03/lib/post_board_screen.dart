@@ -17,8 +17,48 @@ class _PostBoardScreenState extends State<PostBoardScreen> {
   }
 
   Stream getDocument() {
-    CollectionReference ref = fireStore.collection('post');
+    var ref = fireStore.collection('post')
+          .where('category', arrayContains: 'comic');
+
     return ref.snapshots();
+  }
+
+  Stream getDocumentByOrder() {
+    var ref = fireStore.collection('post').orderBy('title', descending: false);
+
+    return ref.snapshots();
+  }
+
+  Stream getDocumentByLimit() {
+    var ref = fireStore.collection('post').orderBy('title', descending: true).limit(3);
+    return ref.snapshots();
+  }
+
+  Stream getDocumentByWhere() {
+    var ref = fireStore.collection('post')
+        .where('views', isGreaterThan: 10)
+        .orderBy('views', descending: false);
+
+    return ref.snapshots();
+  }
+
+
+  void fireStoreWhere() {
+    /*var stream = Firestore.instance.collection('posts')
+      .orderBy('writeDate', descending: true)
+      .snapshots();*/
+
+    /* var stream = Firestore.instance.collection('posts')
+          .where('title', isEqualTo: '글쓰기 테스트 101') // tag 검색?
+          .snapshots();*/
+
+    /*var stream = Firestore.instance.collection('posts') // likes -> likeCount?
+            .orderBy('likes', descending: true)
+            .snapshots();*/
+
+    /*var stream = Firestore.instance.collection('posts') // likes -> likeCount?
+        .orderBy('likes', descending: true)
+        .snapshots();*/
   }
 
   void updateViews(Post post) {
@@ -26,6 +66,10 @@ class _PostBoardScreenState extends State<PostBoardScreen> {
         .collection('post')
         .document(post.id)
         .updateData({'views': post.views + 1});
+  }
+  
+  void queryWhere() {
+    //fireStore.collection('post').where('views', isGreaterThan: {'views': 2}).snapshots();
   }
 
   @override

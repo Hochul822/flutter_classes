@@ -5,9 +5,10 @@ import 'package:flutter_lecture_03/post_write_screen.dart';
 import 'post_board_screen.dart';
 
 void main() {
-  //runApp(MyApp());
+  runApp(MyApp());
+
   //runApp(AuthApp());
-  runApp(PlatformScreen());
+  //runApp(PlatformScreen());
 }
 
 class AuthApp extends StatelessWidget {

@@ -9,7 +9,9 @@ class Post {
   Post.fromJson(Map json):
     this.title = json['title'],
     this.content = json['content'],
-    this.views = json['views'];   
+    this.views = json['views'];
+
+
 
   Map toMap() {
     Map<String, dynamic> map = Map();
