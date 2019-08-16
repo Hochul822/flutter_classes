@@ -1,0 +1,7 @@
+#Fri Aug 16 15:25:16 KST 2019
+base.0=/Users/JcSnap/AndroidStudioProjects/flutter_app_lecture_04/build/app/intermediates/transforms/dexMerger/debug/0
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/JcSnap/AndroidStudioProjects/flutter_app_lecture_04/build/app/intermediates/transforms/dexMerger/debug/0

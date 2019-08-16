@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:protolite-well-known-types:16.0.1@aar" type="AndroidModuleLibraryType">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/4.10.2/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/03ecbd561dc195de1f3fbed0f843708f/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

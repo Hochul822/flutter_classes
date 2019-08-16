@@ -1,0 +1,2 @@
+# Referenced at /Users/JcSnap/AndroidStudioProjects/flutter_app_lecture_04/build/app/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:17
+-keep class io.flutter.app.FlutterApplication { <init>(...); }

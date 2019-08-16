@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:multidex-instrumentation:1.0.2@aar" type="AndroidModuleLibraryType">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/4.10.2/caches/transforms-1/files-1.1/multidex-instrumentation-1.0.2.aar/5d1b07e2abf7579ae29458abca3cda53/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
