@@ -16,9 +16,8 @@ class _PostBoardScreenState extends State<PostBoardScreen> {
     super.initState();
   }
 
-  Stream getDocument() {
-    var ref = fireStore.collection('post')
-          .where('category', arrayContains: 'comic');
+  Stream<QuerySnapshot> getDocument() {
+    CollectionReference ref = fireStore.collection('post').where('views', isGreaterThan: 30).orderBy('views', descending: true);
 
     return ref.snapshots();
   }
