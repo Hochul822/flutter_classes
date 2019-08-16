@@ -1,17 +1,15 @@
 class Post {
   String title;
   String content;
-  String id;
+  String docId;
   int views;
 
   Post({this.title, this.content, this.views});
 
-  Post.fromJson(Map json):
+  Post.fromMap(Map json):
     this.title = json['title'],
     this.content = json['content'],
     this.views = json['views'];
-
-
 
   Map toMap() {
     Map<String, dynamic> map = Map();

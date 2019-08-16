@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-import 'model/post2.dart';
+import 'model/post.dart';
 
 class MyAppPage extends StatefulWidget {
   @override
@@ -18,7 +18,7 @@ class _MyAppPageState extends State<MyAppPage> {
   }
 
   void updateData(Post post) {
-    var docId = post.id;
+    var docId = post.docId;
 
     Map<String, dynamic> map = Map();
     map['views'] = post.views + 1;
@@ -43,7 +43,7 @@ class _MyAppPageState extends State<MyAppPage> {
                 Map map = doc.data;
 
                 Post post = Post.fromMap(doc.data);
-                post.id = doc.documentID;
+                post.docId = doc.documentID;
 
                 posts.add(post);
               });

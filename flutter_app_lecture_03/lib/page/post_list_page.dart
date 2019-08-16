@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lecture_03/model/post3.dart';
+import 'package:flutter_lecture_03/model/post.dart';
 
 class PostListPage extends StatefulWidget {
   @override

@@ -42,28 +42,10 @@ class _PostBoardScreenState extends State<PostBoardScreen> {
   }
 
 
-  void fireStoreWhere() {
-    /*var stream = Firestore.instance.collection('posts')
-      .orderBy('writeDate', descending: true)
-      .snapshots();*/
-
-    /* var stream = Firestore.instance.collection('posts')
-          .where('title', isEqualTo: '글쓰기 테스트 101') // tag 검색?
-          .snapshots();*/
-
-    /*var stream = Firestore.instance.collection('posts') // likes -> likeCount?
-            .orderBy('likes', descending: true)
-            .snapshots();*/
-
-    /*var stream = Firestore.instance.collection('posts') // likes -> likeCount?
-        .orderBy('likes', descending: true)
-        .snapshots();*/
-  }
-
   void updateViews(Post post) {
     fireStore
         .collection('post')
-        .document(post.id)
+        .document(post.docId)
         .updateData({'views': post.views + 1});
   }
   
@@ -93,8 +75,8 @@ class _PostBoardScreenState extends State<PostBoardScreen> {
                   List<Post> posts = [];
                   data.forEach((DocumentSnapshot doc) {
                   
-                    Post post = Post.fromJson(doc.data);
-                    post.id = doc.documentID;
+                    Post post = Post.fromMap(doc.data);
+                    post.docId = doc.documentID;
 
                     posts.add(post);
                   });
